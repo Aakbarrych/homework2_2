@@ -4,14 +4,16 @@ public class Road {
 
         BMW bmw = new BMW();
         Mersedes mersedes = new Mersedes();
+        CarRepoImpl carRepolmpl = new CarRepoImpl();
         bmw.setSoundDrive("drive");
         mersedes.setSoundDrive("drive");
         gd(mersedes);
         gd(bmw);
+
         bmw.setNewSound("driveeee");
         mersedes.setNewSound("driveeee");
-        newSound(mersedes);
-        newSound(bmw);
+        carRepolmpl.newSound(mersedes);
+        carRepolmpl.newSound(bmw);
 
 
     }
